@@ -1,5 +1,5 @@
 name: Test Webdriver IO
-on: push
+on: workflow_dispatch
 jobs:
  test:
   runs-on: windows-latest
