@@ -1,8 +1,8 @@
 name: Testing NHL Workflow
 on: workflow_dispatch
 jobs:
- print testing:
-  runs-on: ubuntu-latest
-  steps:
-   -name: Print to console
-    run: echo Hellow GitHub Actions!
+ print:
+   runs-on: ubuntu-latest
+   steps:
+    - name: run testing
+      run: test 
