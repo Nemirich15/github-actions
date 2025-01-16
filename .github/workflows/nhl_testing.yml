@@ -1,0 +1,10 @@
+name: Testing NHL Workflow
+on: workflow_dispatch
+jobs:
+ print: 
+   runs-on: windows-latest
+   steps:
+    - name: run testing
+      run: echo test NHL.
+    - name: Print a few lines
+      run: echo First line Second line
