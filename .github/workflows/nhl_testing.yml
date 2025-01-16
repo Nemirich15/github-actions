@@ -1,8 +1,8 @@
 name: Testing NHL Workflow
 on: workflow_dispatch
 jobs:
- print:
-   runs-on: ubuntu-latest
+ print: 
+   runs-on: windows-latest
    steps:
     - name: run testing
-      run: test 
+      run: echo test NHL.
