@@ -6,3 +6,7 @@ jobs:
    steps:
     - name: run testing
       run: echo test NHL.
+    - name: Print a few lines
+      run: |
+       echo First line
+       echo Second line
