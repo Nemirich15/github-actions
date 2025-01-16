@@ -3,7 +3,7 @@ on: push
 jobs:
  test:
   runs-on: windows-latest
-   steps:
+  steps:
     -name: Get repository code
     uses: actions/checkout@v4
     - name: Install dependecies
