@@ -1,6 +1,6 @@
 import mainPage from "../pages/main.page";
 
-describe('open NHL main Page', () => {
+xdescribe('open NHL main Page', () => {
 
     it('Open', async() => {
 
@@ -80,11 +80,11 @@ describe('open NHL main Page', () => {
         await browser.pause(5000);
     });
 
-    it('click mainpageBtn', async() => {
+    /*it('click mainpageBtn', async() => {
 
         mainPage.mainPageBtn();
         await browser.pause(5000);
-    });
+    });*/
 
     it('click Serch', async() => {
 

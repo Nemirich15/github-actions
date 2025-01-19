@@ -31,7 +31,7 @@ describe('News Page work correctly', () => {
 
     it('prospects', async() => {
         News.clickProspects();
-        await browser.pause(5000);
+        await browser.pause(2000);
         await browser.newWindow('https://www.nhl.com/news/')
     });
 
