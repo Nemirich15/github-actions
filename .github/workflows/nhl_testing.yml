@@ -9,4 +9,4 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: Test application
-      run: npm run wdio ./wdio github/workflows/nhl_testing.yml
+      run: npm run wdio ./wdio test/specs/main.page.js
