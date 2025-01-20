@@ -15,7 +15,7 @@ class mainPage extends Page {
     get shop() {return $('//*[@id="hamburger-menu"]/ul[1]/li[8]/button/span[1]')};
     get tickets() {return $('//*[@id="hamburger-menu"]/ul[1]/li[9]/a')};
 
-    //get mainPageBtn() {return $('/html/body/div[1]/header/div/a[1]/img')};
+    get mainpage() {return $('/html/body/div[1]/header/div/a[1]')};
     get search() {return $('/html/body/div[1]/header/div/a[3]')};
     get signIn() {return $('//*[@id="hamburger-menu"]/ul[2]/li[2]/a')};
     get language() {return $('//*[@id="hamburger-menu"]/ul[2]/li[1]/button')};
@@ -73,9 +73,9 @@ class mainPage extends Page {
         this.tickets.click();
     };
 
-    /*mainPageBtn() {
-        this.mainPageBtn.click();
-    };*/
+    mainPageBtn() {
+        this.mainpage.click();
+    };
 
     pageSerch() {
         this.search.click();

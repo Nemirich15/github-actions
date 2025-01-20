@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"/html/body/div[1]/section/nav/div/div[1]/div/ul/li[6]/a/span\"}\n  (Session info: chrome=131.0.6778.85)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF645B06CB5+28821]\n\t(No symbol) [0x00007FF645A73840]\n\t(No symbol) [0x00007FF64591578A]\n\t(No symbol) [0x00007FF6459691BE]\n\t(No symbol) [0x00007FF6459694AC]\n\t(No symbol) [0x00007FF6459B2647]\n\t(No symbol) [0x00007FF64598F33F]\n\t(No symbol) [0x00007FF6459AF412]\n\t(No symbol) [0x00007FF64598F0A3]\n\t(No symbol) [0x00007FF64595A778]\n\t(No symbol) [0x00007FF64595B8E1]\n\tGetHandleVerifier [0x00007FF645E3FCAD+3408013]\n\tGetHandleVerifier [0x00007FF645E5741F+3504127]\n\tGetHandleVerifier [0x00007FF645E4B5FD+3455453]\n\tGetHandleVerifier [0x00007FF645BCBDBB+835995]\n\t(No symbol) [0x00007FF645A7EB5F]\n\t(No symbol) [0x00007FF645A7A814]\n\t(No symbol) [0x00007FF645A7A9AD]\n\t(No symbol) [0x00007FF645A6A199]\n\tBaseThreadInitThunk [0x00007FFBD26F7374+20]\n\tRtlUserThreadStart [0x00007FFBD3A1CC91+33]\n"
+}

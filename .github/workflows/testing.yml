@@ -4,9 +4,9 @@ jobs:
  test:
   runs-on: windows-latest
   steps:
-    -name: Get repository code
-    uses: actions/checkout@v4
+    - name: Get repository code
+      uses: actions/checkout@v4
     - name: Install dependecies
       run: npm ci
     - name: Test application
-      run: npm run wdio
+      run: npm run wdio ./wdio github/worcflows/testing.yml

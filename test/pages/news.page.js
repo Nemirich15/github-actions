@@ -1,8 +1,6 @@
 import Page from "./page";
 
-class News extends 
-
-Page {
+class News extends Page {
 
     get theGrEight() {return $('/html/body/div[1]/section/nav/div/div[1]/div/ul/li[1]/a/span')};
     get superSixteen() {return $('/html/body/div[1]/section/nav/div/div[1]/div/ul/li[2]/a/span')};
@@ -26,7 +24,7 @@ Page {
         this.superSixteen.click()
     };
 
-    clickGaneRecap(){
+    clickGameRecap(){
         this.gameRecap.click()
     };
 
@@ -34,9 +32,9 @@ Page {
         this.fourNations.click()
     };
 
-    clickProspects() {
+    /*clickProspects() {
         this.prospects.click()
-    };
+    };*/
 
     clickPlayerSafely() {
         this.playerSafely.click()
