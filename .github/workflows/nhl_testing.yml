@@ -5,7 +5,7 @@ jobs:
    runs-on: windows-latest
    steps:
     - name: run testing
-      run: actions/checkout@v4
+      uses: actions/checkout@v4
     - name: Install dependecies
       run: npm ci
     - name: Test application
