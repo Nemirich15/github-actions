@@ -1,5 +1,5 @@
 name: Test Webdriver IO
-on: push
+on: workflow_dispatch
 jobs:
  test:
   runs-on: windows-latest
@@ -10,3 +10,4 @@ jobs:
       run: npm ci
     - name: Test application
       run: npm run wdio ./wdio github/workflows/testing.yml
+  
