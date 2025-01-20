@@ -1,7 +1,7 @@
 name: Testing NHL Workflow
 on: workflow_dispatch
 jobs:
- print: 
+ test: 
    runs-on: windows-latest
    steps:
     - name: run testing
