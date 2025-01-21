@@ -1,0 +1,17 @@
+name: Testing NHL news page
+on: workflow_dispatch
+jobs:
+  test:
+    run-on: windows-latest
+    steps:
+    - name: run testing
+      uses: actions/chekcout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Test application
+      run: npm run wdio ./wdio test.specs/news.page.js
+
+      
+
+
+

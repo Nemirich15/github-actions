@@ -1,6 +1,6 @@
 import signIn from "../pages/sign_in.page";
 
-xdescribe('Open email and password area', () => {
+describe('Open email and password area', () => {
 
     it('Open page', async() => {
         signIn.open();

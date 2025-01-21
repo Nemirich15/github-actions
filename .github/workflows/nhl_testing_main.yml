@@ -1,4 +1,4 @@
-name: Testing NHL Workflow
+name: Testing NHL main page
 on: workflow_dispatch
 jobs:
  test: 
