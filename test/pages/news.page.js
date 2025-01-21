@@ -28,17 +28,17 @@ class News extends Page {
         this.gameRecap.click()
     };
 
-    clickFourNations() {
+    /*clickFourNations() {
         this.fourNations.click()
-    };
+    };*/
 
     /*clickProspects() {
         this.prospects.click()
     };*/
 
-    clickPlayerSafely() {
+    /*clickPlayerSafely() {
         this.playerSafely.click()
-    };
+    };*/
 
     clickMore() {
         this.more.click()

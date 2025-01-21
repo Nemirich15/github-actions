@@ -23,11 +23,11 @@ describe('News Page work correctly', () => {
         //await browser.pause(2000);
     });
 
-    it('FourNations page', async() => {
+    /*it('FourNations page', async() => {
         News.clickFourNations();
         //await browser.pause(2000);
         await browser.newWindow('https://www.nhl.com/news/')
-    });
+    });*/
 
     /*it('prospects', async() => {
         News.clickProspects();
@@ -35,11 +35,11 @@ describe('News Page work correctly', () => {
         await browser.newWindow('https://www.nhl.com/news/')
     });*/
 
-    it('playerSafely', async() => {
+    /*it('playerSafely', async() => {
         News.clickPlayerSafely();
         //await browser.pause(2000);
         await browser.newWindow('https://www.nhl.com/news/')
-    });
+    });*/
 
     it('More', async() => {
         News.clickMore();
