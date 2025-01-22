@@ -1,17 +1,11 @@
-import Page from "./page";
+/*import Page from "./.page";
 
-class signIn extends Page {
-
-    get email() {return $('//*[@id="main-content"]/div/div[2]/div[2]/form/div[1]/div/input')};
-    get password() {return $('//*[@id="main-content"]/div/div[2]/div[2]/form/div[2]/input')};
-    get fogotPass(){return $('//*[@id="main-content"]/div/div[2]/div[2]/form/div[3]/a')};
-    get signIn() {return $('//*[@id="main-content"]/div/div[2]/div[2]/form/button')};
-    get signUp() {return $('//*[@id="main-content"]/div/div[2]/div[3]/button')};
+class Profile extends Page {
 
     get username() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[2]/input')};
     get firstname() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[3]/input')};
     get lastname() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[4]/input')};
-    /*get month() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[5]/div[2]/div[1]/div/div[1]/div[2]')};
+    get month() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[5]/div[2]/div[1]/div/div[1]/div[2]')};
     get day() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[5]/div[2]/div[2]/div/div[1]/div[2]')};
     get country() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[6]/div[1]/div/div[1]/div[2]')};
     get address() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[7]/input')};
@@ -27,32 +21,89 @@ class signIn extends Page {
     get password() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[2]')};
     get favorites() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[3]')};
     get subscription() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[4]')};
-    get sing_out() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[5]')};*/
+    get sing_out() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[5]')};
 
     open() {
-        super.open('https://account.nhl.com/ui/?client_id=a2nhl&lang=en&redirect_uri=https%3A%2F%2Faccount.nhl.com%2Fui%2F&returnUrl=https%3A%2F%2Fwww.nhl.com%2Fsearch%2F')
+        super.open('https://account.nhl.com/ui/?lang=en');
+    }
+
+    username() {
+        this.username.setValue('nemirich15')
     };
 
-    emaiUserIn() {
-        this.email.setValue('nemirka15@gmail.com');
+    firstname() {
+        this.firstname.setValue('Constantin')
     };
 
-    passUserIn() {
-        this.password.setValue('15nemira15');
+    lastname() {
+        this.lastname.setValue('Nemirka')
     };
 
-    fogotPassUserIn() {
-        this.fogotPass.click();
+    month() {
+        this.month.setValue('01-April')
     };
 
-    signInBtn() {
-        this.signIn.click();
+    day() {
+        this.day.setValue('11')
     };
 
-    signUpBtn() {
-        this.signUp.click();
+    country() {
+        this.country.setValue('Belarus')
     };
+    
+    address() {
+        this.address.setValue('Minsk, Shpilevsky str.')
+    };
+
+    address_two() {
+        this.address_two.setValue('Minsk')
+    };
+
+    city() {
+        this.city.setVanlue('Minsk')
+    };
+
+    state() {
+        this.state.setValue('Minsk region')
+    };
+
+    postcode() {
+        this.postcode.setValue('220160')
+    };
+
+    phone_number() {
+        this.phone_number.setValue('+375259015155');
+    };
+
+    save_changes() {
+        this.save_changes.click()
+    };
+
+    private_policy() {
+        this.private_policy.click()
+    };
+
+    terms_of_servis() {
+        this.terms_of_servis.click()
+    };
+
+    password() {
+        this.password.click()
+    };
+
+    favorites() {
+        this.favorites.click()
+    };
+
+    subscription() {
+        this.subscription.click()
+    };
+
+    sing_out() {
+        this.sing_out.click()
+    };
+
 
 }
 
-export default new signIn();
+export default new Profile();*/

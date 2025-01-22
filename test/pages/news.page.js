@@ -12,7 +12,7 @@ class News extends Page {
     get situationRoom() {return $('/html/body/div[1]/section/nav/div/div[1]/ul/li/a/span')};
 
     open(url) {
-        browser.url('https://www.nhl.com/news/')
+        super.open('https://www.nhl.com/news/')
     };
 
 
@@ -32,13 +32,13 @@ class News extends Page {
         this.fourNations.click()
     };*/
 
-    /*clickProspects() {
+    clickProspects() {
         this.prospects.click()
-    };*/
+    };
 
-    /*clickPlayerSafely() {
+    clickPlayerSafely() {
         this.playerSafely.click()
-    };*/
+    };
 
     clickMore() {
         this.more.click()
