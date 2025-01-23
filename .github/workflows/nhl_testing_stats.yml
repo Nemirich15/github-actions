@@ -1,12 +1,12 @@
 name: Testing statistic page test
 on: workflow_dispatch
 jobs:
-  test:
-    runs-on: windows-latest
-      steps:
-        - name: run testing
-          uses: actions/checkout@v4
-        - name: Install dependecies
-          run: npm ci
-        - name: Test applications
-          run: npm run wdio ./wdio test/specs/stats.page.js
+ test:
+  runs-on: windows-latest
+    steps:
+      - name: run testing
+        uses: actions/checkout@v4
+      - name: Install dependecies
+        run: npm ci
+      - name: Test applications
+        run: npm run wdio ./wdio test/specs/stats.page.js
