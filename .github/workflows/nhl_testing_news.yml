@@ -3,7 +3,7 @@ on: workflow_dispatch
 jobs:
  test:
   runs-on: windows-latest
-    steps:
+  steps:
       - name: run testing
         uses: actions/checkout@v4
       - name: Install dependecies
