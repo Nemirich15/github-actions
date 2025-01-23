@@ -1,30 +1,30 @@
-/*import Profile from "../pages/profile.page";
+import createAccaunt from "../pages/profile.page";
 
-describe('register Profile', () => {
+xdescribe('register Profile', () => {
 
     it(' open profile Page', async() => {
-        Profile.open();
-        await browser.pause(3000);
+        createAccaunt.open();
+        await browser.pause(2000);
     
     });
 
-    it('set username', async() => {
-        Profile.username()
-        await browser.pause(2000)
+    it('set email', async() => {
+        createAccaunt.emailAdress()
+        await browser.pause(3000)
     });
 
     it('set first name', async() => {
-        Profile.firstname()
-        await browser.pause(2000)
+        createAccaunt.firstname()
+        await browser.pause(3000)
     });
 
     it('set last name', async() => {
-        Profile.lastname()
-        await browser.pause(2000)
+        createAccaunt.lastname()
+        await browser.pause(3000)
 
     });
 
-    it(' set month', async() => {
+    /*it(' set month', async() => {
         Profile.month()
         await browser.pause(2000)
 
@@ -46,27 +46,27 @@ describe('register Profile', () => {
         Profile.address_two()
         await browser.pause(2000)
 
+    });*/
+
+    it('set country', async() => {
+        createAccaunt.country()
+        await browser.pause(3000)
+
     });
 
-    it('set city', async() => {
-        Profile.city()
-        await browser.pause(2000)
-
-    });
-
-    it(' set state', async() => {
+    /*it(' set state', async() => {
         Profile.state()
         await browser.pause(2000)
 
-    });
+    });*/
 
     it('setn postcode', async() => {
-        Profile.postcode()
+        createAccaunt.postcode()
         await browser.pause(2000)
 
     });
 
-    it('set phone number', async() => {
+    /*it('set phone number', async() => {
         Profile.phone_number()
         await browser.pause(2000)
 
@@ -76,44 +76,44 @@ describe('register Profile', () => {
         Profile.save_changes()
         await browser.pause(2000)
 
-    });
+    });*/
 
     it('click private policy', async() => {
-        Profile.private_policy()
+        createAccaunt.private_policy()
         await browser.pause(2000)
 
     });
 
     it('click terms of serves', async() => {
-        Profile.terms_of_servis()
+        createAccaunt.terms_of_servis()
         await browser.pause(2000)
 
     });
 
     it('click password', async() => {
-        Profile.password()
+        createAccaunt.password()
         await browser.pause(2000)
 
     });
 
     it('click favorites', async() => {
-        Profile.favorites()
+        createAccaunt.favorites()
         await browser.pause(2000)
 
     });
 
-    it('click subscriptions', async() => {
+    /*it('click subscriptions', async() => {
         Profile.subscription()
         await browser.pause(2000)
 
-    });
+    });*/
 
     it('click sing out', async() => {
-        Profile.sing_out()
+        createAccaunt.sing_out()
         await browser.pause(2000)
 
     });
 
 
-});*/
+});
 

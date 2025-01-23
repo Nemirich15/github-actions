@@ -29,7 +29,7 @@ xdescribe('News Page work correctly', () => {
         await browser.newWindow('https://www.nhl.com/news/')
     });
 
-    it('prospects', async() => {
+    xit('prospects', async() => {
         News.clickProspects();
         //await browser.pause(2000);
         await browser.newWindow('https://www.nhl.com/news/')

@@ -1,34 +1,36 @@
-/*import Page from "./.page";
+import Page from "./page";
 
-class Profile extends Page {
+class createAccaunt extends Page {
 
-    get username() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[2]/input')};
-    get firstname() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[3]/input')};
-    get lastname() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[4]/input')};
-    get month() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[5]/div[2]/div[1]/div/div[1]/div[2]')};
-    get day() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[5]/div[2]/div[2]/div/div[1]/div[2]')};
-    get country() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[6]/div[1]/div/div[1]/div[2]')};
-    get address() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[7]/input')};
-    get address_two() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[8]/input')};
-    get city() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[9]/input')};
-    get state() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[10]/input')};
-    get postcode() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[11]/input')};
-    get phone_number() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[12]/input')};
-    get save_changes() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/button')};
-    get private_policy() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/div[3]/span/a[1]')};
-    get terms_of_servis() {return('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/div[3]/span/a[2]')};
+    get emailAdress() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[1]/div/input')};
+    get firstname() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[2]/input')};
+    get lastname() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[3]/input')};
+    //get month() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[5]/div[2]/div[1]/div/div[1]/div[2]')};
+    //get day() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[5]/div[2]/div[2]/div/div[1]/div[2]')};
+    get country() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[6]/div[1]/div/div[1]/div[2]')};
+    //get address() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[7]/input')};
+    //get address_two() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[8]/input')};
+   // get city() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[9]/input')};
+   // get state() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[10]/input')};
+    get postcode() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[7]/input')};
+    //get phone_number() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/div[12]/input')};
+    //get save_changes() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[2]/form/button')};
+    get nhl_com_privacy() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[9]/span/a')};
+    get terms_of_servis() {return('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[11]/span/a')};
 
-    get password() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[2]')};
-    get favorites() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[3]')};
-    get subscription() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[4]')};
-    get sing_out() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[5]')};
+    get password() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[4]/input')};
+    get confirmPassword() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[5]/input')};
+    get favoriteTeam() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/div[8]/div[1]/div/div[1]/div[2]')};
+    get register() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/form/button')};
+    //get subscription() {return $('//*[@id="main-content"]/div/div[5]/div[2]/div[1]/a[4]')};
+    get sing_in() {return $('//*[@id="main-content"]/div/div[3]/div[2]/div[2]/div[3]/a')};
 
     open() {
-        super.open('https://account.nhl.com/ui/?lang=en');
+        super.open('https://account.nhl.com/ui/register?client_id=a2nhl&redirect_uri=https%3A%2F%2Faccount.nhl.com%2Fui%2F');
     }
 
-    username() {
-        this.username.setValue('nemirich15')
+    emailAdress () {
+        this.emailAdress.setValue('nemirich15')
     };
 
     firstname() {
@@ -39,19 +41,19 @@ class Profile extends Page {
         this.lastname.setValue('Nemirka')
     };
 
-    month() {
+    /*month() {
         this.month.setValue('01-April')
     };
 
     day() {
         this.day.setValue('11')
-    };
+    };*/
 
     country() {
         this.country.setValue('Belarus')
     };
     
-    address() {
+    /*address() {
         this.address.setValue('Minsk, Shpilevsky str.')
     };
 
@@ -65,22 +67,22 @@ class Profile extends Page {
 
     state() {
         this.state.setValue('Minsk region')
-    };
+    };*/
 
     postcode() {
-        this.postcode.setValue('220160')
+        this.postcode.setValue(220160)
     };
 
-    phone_number() {
+    /*phone_number() {
         this.phone_number.setValue('+375259015155');
     };
 
     save_changes() {
         this.save_changes.click()
-    };
+    };*/
 
     private_policy() {
-        this.private_policy.click()
+        this.nhl_com_privacy.click()
     };
 
     terms_of_servis() {
@@ -92,18 +94,18 @@ class Profile extends Page {
     };
 
     favorites() {
-        this.favorites.click()
+        this.favoriteTeam.click()
     };
 
-    subscription() {
+    /*subscription() {
         this.subscription.click()
-    };
+    };*/
 
     sing_out() {
-        this.sing_out.click()
+        this.sing_in.click()
     };
 
 
 }
 
-export default new Profile();*/
+export default new createAccaunt();
