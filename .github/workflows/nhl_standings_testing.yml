@@ -7,6 +7,6 @@ jobs:
     - name: run testing
       uses: actions/checkout@v4
     - name: Install dependecies
-      run: nmp ci
+      run: npm ci
     - name: Test applications
       run: npm run wdio ./wdio test/specs/standings_page.js
