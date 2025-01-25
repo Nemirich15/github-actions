@@ -1,6 +1,6 @@
-import Page from "./page";
-
-class mainPage extends Page {
+ import Page from "./page"
+ 
+ class mainPage extends Page{
     
     get news() {return $('/html/body/div[1]/header/div/nav[1]/ul/li[1]/a/span')};
     get video() {return $('/html/body/div[1]/header/div/nav[1]/ul/li[2]/a/span')};
@@ -20,7 +20,7 @@ class mainPage extends Page {
     get signIn() {return $('//*[@id="hamburger-menu"]/ul[2]/li[2]/a')};
     get language() {return $('//*[@id="hamburger-menu"]/ul[2]/li[1]/button')};
 
-    open() {
+    open(url) {
         super.open('https://www.nhl.com/');
     };
         

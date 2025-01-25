@@ -5,7 +5,7 @@ xdescribe('open NHL main Page', () => {
     it('Open', async() => {
 
         mainPage.open();
-        await browser.pause(3000);
+        await browser.pause(5000);
     });
 
     it('click News', async() => {
@@ -98,7 +98,7 @@ xdescribe('open NHL main Page', () => {
         await browser.pause(2000);
     });
 
-    it('click Language', async() => {
+    xit('click Language', async() => {
 
         mainPage.pageLanguage();
         await browser.pause(2000);

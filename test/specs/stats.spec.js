@@ -4,17 +4,17 @@ xdescribe('Open stats Page', () => {
 
     it('Open page', async() => {
         Stats.open();
-        await browser.pause(3000);
+        await browser.pause(2000);
     });
 
     it('home pafge', async() => {
         Stats.home();
-        await browser.pause(3000);
+        await browser.pause(2000);
     });
 
     it('open scaters', async() => {
         Stats.skaters();
-        await browser.pause(3000);
+        await browser.pause(2000);
     });
 
     it('open goalies', async() => {
