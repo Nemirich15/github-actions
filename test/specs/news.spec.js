@@ -1,13 +1,13 @@
 import News from "../pages/news.page";
 
-xdescribe('News Page work correctly', () => {
+describe('News Page work correctly', () => {
 
     it('Open Page', async() => {
         News.open();
         await browser.pause(1000);
     });
 
-    xit('Open GrEight Page', async() => {
+it('Open GrEight Page', async() => {
         News.clickTheGreatEight();
         await browser.pause(1000);
     });
@@ -23,31 +23,26 @@ xdescribe('News Page work correctly', () => {
         await browser.pause(1000);
     });
 
-    xit('FourNations page', async() => {
+    it('FourNations page', async() => {
         News.clickFourNations();
-        await browser.pause(1000);
-        await browser.newWindow('https://www.nhl.com/news/')
+        //await browser.newWindow('https://www.nhl.com/news/');
     });
 
-    xit('prospects', async() => {
+    it('prospects', async() => {
         News.clickProspects();
-        //await browser.pause(2000);
-        await browser.newWindow('https://www.nhl.com/news/')
+        //await browser.newWindow('https://www.nhl.com/news/')
     });
 
-    xit('playerSafely', async() => {
+    it('playerSafely', async() => {
         News.clickPlayerSafely();
-        //await browser.pause(2000);
-        await browser.newWindow('https://www.nhl.com/news/')
+        //await browser.newWindow('https://www.nhl.com/news/')
     });
 
     it('More', async() => {
         News.clickMore();
-        //await browser.pause(2000);
     });
 
     it('Situation Room', async() => {
         News.clickSituationRoom();
-        //await browser.pause(2000);
     });
 })

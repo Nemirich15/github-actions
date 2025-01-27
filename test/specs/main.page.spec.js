@@ -1,6 +1,6 @@
 import mainPage from "../pages/main.page";
 
-xdescribe('open NHL main Page', () => {
+describe('open NHL main Page', () => {
 
     it('Open', async() => {
 
@@ -98,7 +98,7 @@ xdescribe('open NHL main Page', () => {
         await browser.pause(2000);
     });
 
-    xit('click Language', async() => {
+    it('click Language', async() => {
 
         mainPage.pageLanguage();
         await browser.pause(2000);
