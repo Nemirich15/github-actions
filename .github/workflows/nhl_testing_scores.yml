@@ -9,4 +9,4 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: Testing application
-      run: npm wdio ./wdio test/specs/scores.page.js
+      run: npm run wdio ./wdio test/specs/scores.page.js
