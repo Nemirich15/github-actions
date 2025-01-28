@@ -4,9 +4,9 @@ jobs:
   test:
     runs-on: windows-latest
     steps:
-      - name: testing page
-        uses: actions/checkout@v4
-      - name: Install dependecies
-        run: npm ci
-      - name: Test application
-        run: npm run wdio ./wdio tets/specs/units.page.js
+    - name: testing page
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Test application
+      run: npm run wdio ./wdio tets/specs/units.page.js

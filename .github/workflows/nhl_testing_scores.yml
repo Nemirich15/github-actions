@@ -1,13 +1,12 @@
-name: Test Webdriver IO
+name: Testing Scores page
 on: workflow_dispatch
 jobs:
   test:
     runs-on: windows-latest
     steps:
-    - name: Get repository code
+    - name: run test
       uses: actions/checkout@v4
     - name: Install dependecies
       run: npm ci
-    - name: Test application
-      run: npm run wdio ./wdio github/workflows/testing.yml
-  
+    - name: Testing application
+      run: npm wdio ./wdio test/specs/scores.page.js

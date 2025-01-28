@@ -1,6 +1,6 @@
 import mainPage from "../pages/main.page";
 
-xdescribe('open NHL main Page', () => {
+describe('open NHL main Page', () => {
 
     it('Open', async() => {
 
