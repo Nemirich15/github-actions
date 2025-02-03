@@ -1,6 +1,6 @@
 import Stats from "../pages/stats.page";
 
-xdescribe('Open stats Page', () => {
+describe('Open stats Page', () => {
 
     it('Open page', async() => {
         Stats.open();

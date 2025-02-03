@@ -1,6 +1,6 @@
 import News from "../pages/news.page";
 
-xdescribe('News Page work correctly', () => {
+describe('News Page work correctly', () => {
 
     it('Open Page', async() => {
         News.open();

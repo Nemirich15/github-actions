@@ -1,6 +1,6 @@
 import Units from "../pages/units.page";
 
-xdescribe('Open units page', () => {
+describe('Open units page', () => {
 
 it('Open page', async() => {
     

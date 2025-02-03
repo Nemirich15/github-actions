@@ -1,6 +1,6 @@
 import Scores from "../pages/scores.page";
 
-xdescribe('Scores page', () => {
+describe('Scores page', () => {
 
     it('Open scores', async() => {
         Scores.open();

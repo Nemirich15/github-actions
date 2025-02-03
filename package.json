@@ -2,16 +2,22 @@
   "name": "webdriverio",
   "type": "module",
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
     "@wdio/allure-reporter": "^9.2.14",
     "@wdio/cli": "^9.4.1",
     "@wdio/junit-reporter": "^9.2.14",
     "@wdio/local-runner": "^9.4.1",
     "@wdio/mocha-framework": "^9.2.8",
     "@wdio/spec-reporter": "^9.2.14",
-    "@wdio/visual-service": "^6.2.2"
+    "@wdio/visual-service": "^6.2.2",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "wdio-eslinter-service": "^0.0.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "eslint": "eslint .",
+    "build": "build ."
   }
 }

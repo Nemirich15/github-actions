@@ -1,6 +1,6 @@
 import Password from "../pages/password.page";
 
-xdescribe('Password page', () => {
+describe('Password page', () => {
 
     it('Open page', async() => {
         Password.open();
