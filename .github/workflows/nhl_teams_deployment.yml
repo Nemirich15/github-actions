@@ -12,6 +12,7 @@ jobs:
       run: npm run wdio ./wdio test/specs/teams.page.js
   lint:
     runs-on: windows-latest
+    needs: test
     steps:
     - name: Run testing
       uses: actions/checkout@v4
@@ -21,6 +22,7 @@ jobs:
       run: npm run wdio ./lint .
   build:
     runs-on: windows-latest
+    needs: lint
     steps:
     - name: Run testing
       uses: actions/checkout@v4
