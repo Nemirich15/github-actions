@@ -1,6 +1,6 @@
 /*describe('Locators Demo', () => {
 
-    before(async()=> {
+    before('', async() => {
 
         await browser.url('https://demoqa.com/links')
     
@@ -65,7 +65,7 @@
         linkResponse.scrollIntoView()
         await expect(linkResponse).toHaveText('Link has responded with staus 401 and status text Unauthorized')
     })
-})*/
+})
 
 xdescribe('Locators Demo', ()=> {
 
@@ -148,4 +148,4 @@ xdescribe('Locators Demo', ()=> {
     })
 
 
-})
+})*/
