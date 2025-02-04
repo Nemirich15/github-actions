@@ -21,14 +21,14 @@ jobs:
     - name: Lint application
       run: npm run wdio ./lint .
   build:
-  runs-on: windows-latest
-  needs: lint
-  steps:
-  - name: Run test
-    uses: actions/checkout@v4
-  - name: Install dependecies
-    run: npm ci
-  - name: Build application
-    run: npm run wdio ./build .
-  - name: Deploy
-    run: echo "Deploying..."
+    runs-on: windows-latest
+    needs: lint
+    steps:
+    - name: Run test
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Build application
+      run: npm run wdio ./build .
+    - name: Deploy
+      run: echo "Deploying..."
