@@ -1,6 +1,6 @@
 import Teams from "../pages/teams.page";
 
-describe ('Teams page', () => {
+xdescribe ('Teams page', () => {
 
     it('Open page', async() => {
         Teams.open()

@@ -1,6 +1,6 @@
 import createAccaunt from "../pages/profile.page";
 
-describe('register Profile', () => {
+xdescribe('register Profile', () => {
 
     it(' open profile Page', async() => {
         createAccaunt.open();

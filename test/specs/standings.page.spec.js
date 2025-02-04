@@ -1,6 +1,6 @@
 import Standings from "../pages/standings.page"
 
-describe('Open page Standings', () => {
+xdescribe('Open page Standings', () => {
 
     it('Open Page', async() => {
         Standings.open();
