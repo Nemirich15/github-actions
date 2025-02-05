@@ -9,7 +9,7 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: Test application
-      run: npm wdio ./wdio test/specs/fantasy.page.js
+      run: npm run wdio ./wdio test/specs/fantasy.page.js
   lint:
     runs-on: windows-latest
     needs: test
@@ -19,7 +19,7 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: Lint application
-      run: npm wdio ./lint .
+      run: npm run wdio ./lint .
   build:
     runs-on: windows-latest
     needs: lint
@@ -29,4 +29,4 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: Build application
-      run: npm wdio ./build .  
+      run: npm run wdio ./build .  
