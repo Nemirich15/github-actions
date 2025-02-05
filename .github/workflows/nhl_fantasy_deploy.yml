@@ -1,0 +1,30 @@
+name: Fantasy page deploy
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Run test
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Test application
+      run: npm wdio ./wdio test/specs/fantasy.page.js
+  lint:
+    runs-on: windows-latest
+    steps:
+    - name: Run lint
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Lint application
+      run: npm wdio ./lint .
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Run build
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Build application
+      run: npm wdio ./build .  

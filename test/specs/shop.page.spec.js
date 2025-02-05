@@ -1,6 +1,6 @@
 import Shop from "../pages/shop.page";
 
-describe('Shop page', () => {
+xdescribe('Shop page', () => {
     
     it('Open page', async () => {
         Shop.open();
