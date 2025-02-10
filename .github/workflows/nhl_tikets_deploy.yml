@@ -1,0 +1,35 @@
+name: Tickets page
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: run test
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Test application
+      run: nmp run wdio ./wdio test/specs/tickets.page.js 
+  lint:
+    runs-on: windows-latest
+    needs: test
+    steps:
+    - name: Run Lint
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Lint application
+      run: npm run wdio ./lint .
+  build:
+    runs-on: windows-latest
+    needs: lint
+    steps:
+    - name: Run build
+      uses: actions/checkout@v4
+    - name: install dependecies
+      run: npm ci
+    - name: Build application
+      run: npm run wdio ./build .\
+    - name: Deploy application
+      run: echo 'Deploying.....'
+    

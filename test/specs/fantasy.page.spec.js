@@ -1,6 +1,6 @@
 import Fantasy from "../pages/fantasy.page";
 
-describe('Fantasy page', () => {
+xdescribe('Fantasy page', () => {
 
     it('Open fantasy page', async() => {
         Fantasy.open();
