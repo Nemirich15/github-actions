@@ -9,7 +9,7 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: Test application
-      run: nmp run wdio ./wdio test/specs/tickets.page.js 
+      run: npm run wdio ./wdio test/specs/tickets.page.js
   lint:
     runs-on: windows-latest
     needs: test
