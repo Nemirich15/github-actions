@@ -1,35 +1,34 @@
-name: Tickets page deploy
+name: Players page deploy
 on: workflow_dispatch
 jobs:
   test:
     runs-on: windows-latest
     steps:
-    - name: Run test
+    - name: Run Test
       uses: actions/checkout@v4
-    - name: Install dependecies
+    - name: Inatall dependecies
       run: npm ci
     - name: Test application
-      run: npm run wdio ./wdio test/specs/tickets.page.js
+      run: npm run wdio ./wdio test/specs/players.page.js
   lint:
     runs-on: windows-latest
     needs: test
     steps:
-    - name: Run Lint
-      uses: actions/checkout@v4
-    - name: Install dependecies
-      run: npm ci
-    - name: Lint application
-      run: npm run wdio ./lint .
+      - name: Run Lint
+        uses: actions/checkout@v4
+      - name: Install dependecies
+        run: npm ci
+      - name: Lint application
+        run: npm run wdio ./lint .
   build:
     runs-on: windows-latest
     needs: lint
     steps:
     - name: Run build
       uses: actions/checkout@v4
-    - name: install dependecies
+    - name: Install dependecies
       run: npm ci
     - name: Build application
       run: npm run wdio ./build .
     - name: Deploy application
-      run: echo 'Deploying.....'
-    
+      run: echo "Deploing..."

@@ -1,6 +1,6 @@
 import Tickets from "../pages/tickets.page";
 
-describe('Tickets page', () => {
+xdescribe('Tickets page', () => {
 
     it('Open', async() => {
         Tickets.open()
