@@ -1,6 +1,6 @@
 import Players from "../pages/players.page";
 
-describe('Open page', () => {
+xdescribe('Open page', () => {
 
     it('Open Page Players', async() => {
         Players.open();

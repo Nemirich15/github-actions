@@ -1,0 +1,34 @@
+name: Deploy Policyes Agreements pages
+on: workflow_disputch
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Test
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Test application
+      run: npm run wdio ./wdio test/specs/servises_agreements.page.js
+  lint:
+    runs-on: windows-latest
+    needs: test
+    steps:
+    - name: Lint
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - namme: Lint application
+      run: npm run wdio ./lint .
+  build:
+    runs-on: windows-latest
+    needs: lint
+    steps:
+    - name: Build
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Build application
+      run: npm run wdio ./build .
+    - name: Deploying 
+      run: echo "Deploying app..."
