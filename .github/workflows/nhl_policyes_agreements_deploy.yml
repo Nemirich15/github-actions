@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v4
     - name: Install dependecies
       run: npm ci
-    - namme: Lint application
+    - name: Lint application
       run: npm run wdio ./lint .
   build:
     runs-on: windows-latest
