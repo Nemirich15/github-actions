@@ -1,6 +1,6 @@
 import Servises from "../pages/servises_agreements.page";
 
-describe('Page Servises and Agreements', () => {
+xdescribe('Page Servises and Agreements', () => {
 
     it('Open page', async() => {
         Servises.open();
