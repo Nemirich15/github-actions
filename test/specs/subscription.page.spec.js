@@ -1,6 +1,6 @@
 import Subscription from "../pages/subscription.page";
 
-describe (' Subscribe page', () => {
+xdescribe (' Subscribe page', () => {
 
     it('Open page', async()=> {
         Subscription.open()

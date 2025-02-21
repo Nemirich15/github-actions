@@ -1,0 +1,34 @@
+name: Top stories
+on: workflow_dispath
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Test
+      uses: actions/checkout@v4z
+    - name: Install dependecies
+      run: npm ci
+    - name: Test application
+      run: npm run wdio ./wdio test/specs/top.stories.js
+  lint:
+    runs-on: windows-latest
+    needs: test
+    steps:
+    - name: Lint
+      uses: actions/checkout@v4
+    - name: Insatall dependecies
+      run: npm ci
+    - name: Run application
+      run: npm run wdio ./lint .
+  build:
+    runs-on: windows-latest
+    needs: lint
+    steps:
+    - name: Build
+      uses: actions/checkout@v4
+    - name: install drpendecies
+      run: npm ci
+    - name: run application
+      run: npm run wdio ./build .
+    - name: build Application
+      run: echo 'Buid is complete...' 
