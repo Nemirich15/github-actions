@@ -21,7 +21,7 @@ jobs:
     - name: Lint application
       run: npm run wdio ./lint .
   build:
-    runs_on: windows-latest
+    runs-on: windows-latest
     needs: lint
     steps:
     - name: Run build
