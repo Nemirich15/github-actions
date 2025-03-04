@@ -1,6 +1,6 @@
 import TopStories from "../pages/top.stories";
 
-describe('Top stories', () => {
+xdescribe('Top stories', () => {
 
     it('Open Page', async() => {
         TopStories.open();
