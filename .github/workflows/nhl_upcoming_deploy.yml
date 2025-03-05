@@ -1,0 +1,35 @@
+name: Upcoming deploy
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Run test
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Test application
+      run: npx wdio
+  lint:
+    runs-on: windows-latest
+    steps:
+    - name: Lint
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Lint application
+      run: npm run wdio ./lint .
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Run build
+      uses: actions/checkout@v4;
+    - name: Install dependecies
+      run: npm ci
+    - name: Build aplication
+      run: npm run wdio /build .
+    - name: Deploy aplication
+      run: echo 'Building...'
+
+
+
