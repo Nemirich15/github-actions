@@ -13,7 +13,7 @@ jobs:
   lint:
     runs-on: windows-latest
     steps:
-    - name: Lint
+    - name: Run lint
       uses: actions/checkout@v4
     - name: Install dependecies
       run: npm ci
@@ -27,7 +27,7 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: Build aplication
-      run: npm run wdio /build .
+      run: npm run wdio ./build .
     - name: Deploy aplication
       run: echo 'Building...'
 
