@@ -1,0 +1,32 @@
+name: Video_edit deploy
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Run test
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Test applicatuion
+      run: npm run wdio ./wdio specs/video-edit.page.js
+  lint:
+    runs-on: windows-latest
+    steps:
+    - name: Run lint
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Lint aplication
+      run: npm run wdio ./lint .
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Run build
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Build aplication
+      run: npm run wdio ./ build .
+    - name: Deplloy aplication
+      run: echo 'Deploying...' 

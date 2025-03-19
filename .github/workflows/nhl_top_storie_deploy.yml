@@ -8,7 +8,7 @@ jobs:
       uses: actions/checkout@v4z
     - name: Install dependecies
       run: npm ci
-    - name: Test application
+    - name: Test aplication
       run: npm run wdio ./wdio test/specs/top.stories.js
   lint:
     runs-on: windows-latest
@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v4
     - name: Insatall dependecies
       run: npm ci
-    - name: Run application
+    - name: Run aplication
       run: npm run wdio ./lint .
   build:
     runs-on: windows-latest
@@ -28,7 +28,7 @@ jobs:
       uses: actions/checkout@v4
     - name: install drpendecies
       run: npm ci
-    - name: run application
+    - name: run aplication
       run: npm run wdio ./build .
     - name: build Application
       run: echo 'Buid is complete...' 

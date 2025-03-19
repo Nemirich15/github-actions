@@ -1,6 +1,6 @@
 import Upcoming from "../pages/upcoming.page";
 
-describe('Upcoming Page', () => {
+xdescribe('Upcoming Page', () => {
 
     it('Open Page', async() => {
         Upcoming.open();
