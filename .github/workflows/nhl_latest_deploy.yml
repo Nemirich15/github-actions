@@ -1,0 +1,34 @@
+name: Latest page Deploy
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Test 
+      uses: actions/checkout@v4
+    - name: Instal dependecies
+      run: npm ci
+    - name: Run test
+      run: npm run wdio ./wdio/test/specs/latest.page.js
+  lint:
+    runs-on: windows-latest
+    needs: test
+    steps:
+    - name: Lint
+      uses: actions/checkout@v4
+    - name: Instal dependecies
+      run: npm ci
+    - name: Run lint
+      run: npm run wdio ./lint .
+  build:
+    runs-on: windows-latest
+    needs: lint
+    steps:
+    - name: Build
+      uses: actions/checkout@v4
+    - name: Instal dependecies
+      run: npm ci
+    - name: Run build
+      run: npm run wdio ./build .
+    - name: Deploy app
+      run: echo "Deploying..."
